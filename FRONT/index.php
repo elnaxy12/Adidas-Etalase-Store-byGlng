@@ -42,50 +42,62 @@ $username = $_SESSION['username'] ?? 'guest';
         <div class="loader"></div>
     </div>
     <script>
-        const loaderMain = document.getElementById("loaderMain");
+        // ===============================
+        // animasi loading page index.php
+        // ===============================
+        const overlay = document.getElementById("overlay");
+        const startBox = document.getElementById("startBox");
+        const startBtn = document.getElementById("startBtn");
 
-        // tampilkan loader beberapa detik lalu hilang
-        function showLoader(duration = 3000) { // durasi 3 detik default
-            loaderMain.style.display = "block"; // pastikan muncul
+        // -------------------------
+        // Loader utama
+        // -------------------------
+        function showLoader(duration = 3000, callback) {
+            const loaderMain = document.getElementById("loaderMain");
+            loaderMain.style.display = "block";
             loaderMain.style.opacity = "1";
 
             setTimeout(() => {
-                loaderMain.style.opacity = "0"; // fade out
+                loaderMain.style.opacity = "0";
                 setTimeout(() => {
-                    loaderMain.style.display = "none"; // sembunyikan setelah fade
-                }, 500); // cocokkan dengan durasi transition
+                    loaderMain.style.display = "none";
+                    if (callback) callback();
+                }, 500);
             }, duration);
         }
 
-        // jalankan loader saat halaman dimuat
-        showLoader(3000);
+        // -------------------------
+        // Overlay & redirect
+        // -------------------------
+        function showOverlayAndRedirect() {
+            startBox.classList.add("fadeOutDown");
+            setTimeout(() => startBox.style.display = "none", 800);
 
-        const startBtn = document.getElementById("startBtn");
-        const startBox = document.getElementById("startBox");
-        const overlay = document.getElementById("overlay");
+            overlay.style.display = "block";
+            setTimeout(() => overlay.classList.add("show"), 50);
 
-        startBtn.addEventListener("click", function() {
-            // delay sebelum fadeOutDown
             setTimeout(() => {
-                startBox.classList.add("fadeOutDown");
+                window.location.href = "page-etalase.php";
+            }, 3000);
+        }
 
-                // hilangkan teks setelah animasi
-                setTimeout(() => {
-                    startBox.style.display = "none";
-                }, 800); // sesuai durasi transition fadeOutDown
+        // -------------------------
+        // Klik tombol start
+        // -------------------------
+        startBtn.addEventListener("click", () => {
+            setTimeout(showOverlayAndRedirect, 500);
+        });
 
-                // tampilkan overlay setelah animasi mulai
-                overlay.style.display = "block";
-                setTimeout(() => {
-                    overlay.classList.add("show");
-                }, 50);
-
-                // redirect ke page-etalase.php setelah 3 detik
-                setTimeout(() => {
-                    window.location.href = "page-etalase.php";
-                }, 5000);
-
-            }, 500); // delay awal 0.5 detik
+        // -------------------------
+        // Handle back/forward cache
+        // -------------------------
+        window.addEventListener("pageshow", function(event) {
+            // selalu jalankan overlay & redirect saat balik
+            if (event.persisted || performance.getEntriesByType("navigation")[0].type === "back_forward") {
+                showOverlayAndRedirect();
+            } else {
+                showLoader(3000);
+            }
         });
     </script>
 </body>

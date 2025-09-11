@@ -276,6 +276,7 @@ body {
 }
 
 .main-wrapper .container-slide .etalase-slide .slide p.title-product {
+  font-size: 12px;
   margin-top: 0px;
 }
 
@@ -354,10 +355,13 @@ body {
   border: 1px solid black;
 }
 
-.main-wrapper .container-slide button.btn-next {
+.main-wrapper .container-slide button.btn-next,
+.main-wrapper .container-slide button.btn-next2 {
   right: 10px;
 }
-.main-wrapper .container-slide button.btn-prev {
+
+.main-wrapper .container-slide button.btn-prev,
+.main-wrapper .container-slide button.btn-prev2 {
   left: 10px;
 }
 
@@ -372,7 +376,8 @@ body {
   background: #ddd;
   overflow: hidden;
 }
-.progress-bar #progress {
+.progress-bar #progress,
+.progress-bar #progress2 {
   height: 100%;
   width: 0%;
   background: black;
@@ -392,4 +397,40 @@ body {
   left: 0;
   top: 45pc;
   z-index: -1;
+}
+
+.adidas-content {
+  margin-top: 3pc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adidas-content .col2 {
+  display: flex;
+  gap: 20px;
+}
+
+.adidas-content .col2 a {
+  position: relative;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.adidas-content .col2 a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background: black;
+  transition: width 0.3s ease;
+  font-weight: 600;
+}
+
+.adidas-content .col2 a:hover::after {
+  width: 100%;
 }

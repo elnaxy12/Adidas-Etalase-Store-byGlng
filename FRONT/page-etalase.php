@@ -104,11 +104,13 @@ $username = $_SESSION['username'] ?? 'guest';
         </div>
     </div>
 
-    <!--slider-etaalse-->
+
+    <!--slider-etalase-product-->
     <div class="main-wrapper">
         <div class="title-top-men">
             <p>TOP MEN FOR YOU</p>
         </div>
+        <!--slider-etalase-top-men-->
         <div class="container-slide">
             <button class="btn-slider btn-prev">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left">
@@ -230,11 +232,152 @@ $username = $_SESSION['username'] ?? 'guest';
         <div class="progress-bar">
             <div id="progress"></div>
         </div>
+
+
+        <!--slider-top-women-->
+        <div class="title-top-men">
+            <p>BEST WOMEN FOR YOU</p>
+        </div>
+        <div class="container-slide">
+            <button class="btn-slider btn-prev2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left">
+                    <path d="m15 18-6-6 6-6" />
+                </svg>
+            </button>
+            <div id="slider2" class="etalase-slide">
+                <div class="slide">
+                    <div class="prototype">
+                        <button class="appreciate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                            </svg>
+                        </button>
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/606f418a01a14c419ac35e7c84a5e2d2_9366/Samba_OG_Shoes_Brown_JR0891_00_plp_standard.jpg" alt="">
+                    </div>
+                    <p class="price">$100</p>
+                    <p class="title-product">SAMBA OG SHOES</p>
+                    <P class="badge-product">ORIGINALS</P>
+                </div>
+                <div class="slide">
+                    <div class="prototype">
+                        <button class="appreciate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                            </svg>
+                        </button>
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/9da93feaffd84fa5baf15e0b9727687a_9366/Swift_Run_1.0_Shoes_Grey_JR6898_00_plp_standard.jpg" alt="">
+                    </div>
+                    <p class="price">$60</p>
+                    <p class="title-product">SWIFT RUN 1.0 SHOES</p>
+                    <P class="badge-product">SPORTSWEAR</P>
+                </div>
+                <div class="slide">
+                    <div class="prototype">
+                        <button class="appreciate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                            </svg>
+                        </button>
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/e694f6e9261b48d6b255ca8a1388d3d5_9366/ULTRABOOST_1.0_SHOES_White_JR1987_HM1.jpg" alt="">
+                    </div>
+                    <p class="price">$135</p>
+                    <p class="title-product">ULTRABOOST 1.0 SHOES</p>
+                    <P class="badge-product">SPORTSWEAR</P>
+                </div>
+                <div class="slide">
+                    <div class="prototype">
+                        <button class="appreciate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                            </svg>
+                        </button>
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/911ec048adc4471f938af50867c2ad85_9366/Gazelle_Indoor_Shoes_Red_JI2063_00_plp_standard.jpg" alt="">
+                    </div>
+                    <p class="price">$120</p>
+                    <p class="title-product">GAZELLA INDOOR SHOES</p>
+                    <P class="badge-product">ORIGINALS</P>
+                </div>
+                <div class="slide">
+                    <div class="prototype">
+                        <button class="appreciate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                            </svg>
+                        </button>
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ed03f2b031b04884a8481cec1ccca4e2_9366/Adizero_EVO_SL_Shoes_Black_JP7149_00_plp_standard.jpg" alt="">
+                    </div>
+                    <p class="price">$150</p>
+                    <p class="title-product">ADIZERO EVO SL SHOES</p>
+                    <P class="badge-product">PERFORMANCE</P>
+                </div>
+                <div class="slide">
+                    <div class="prototype">
+                        <button class="appreciate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                            </svg>
+                        </button>
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ee99b4b9bde74f30a933a8bf011911ae_9366/Samba_OG_Shoes_Black_B75807_00_plp_standard.jpg" alt="">
+                    </div>
+                    <p class="price">$100</p>
+                    <p class="title-product">SAMBA OG SHOES</p>
+                    <P class="badge-product">ORIGINALS</P>
+                </div>
+                <div class="slide">
+                    <div class="prototype">
+                        <button class="appreciate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                            </svg>
+                        </button>
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/f0ca2dd8bdb84a2ab11faacb8802c4dc_9366/Ultraboost_1.0_Shoes_White_HQ4202_HM1.jpg" alt="">
+                    </div>
+                    <p class="price">$135</p>
+                    <p class="title-product">ULTRABOOST 1.0 SHOES</p>
+                    <P class="badge-product">SPORTSWEAR</P>
+                </div>
+                <div class="slide">
+                    <div class="prototype">
+                        <button class="appreciate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                            </svg>
+                        </button>
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/507b9464089e4c818536b4613435aebf_9366/Samba_OG_Shoes_Blue_ID2056_00_plp_standard.jpg" alt="">
+                    </div>
+                    <p class="price">$135</p>
+                    <p class="title-product">ULTRABOOST 1.0 SHOES</p>
+                    <P class="badge-product">SPORTSWEAR</P>
+                </div>
+            </div>
+            <button class="btn-slider btn-next2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right">
+                    <path d="m9 18 6-6-6-6" />
+                </svg>
+            </button>
+        </div>
+        <div class="progress-bar">
+            <div id="progress2"></div>
+        </div>
     </div>
 
     <!--gif shoes-->
     <div class="main-wrapper">
         <div class="content-gif"></div>
+    </div>
+
+    <div class="main-wrapper adidas-content">
+        <div class="col1">
+            <div class="adidas-logo">
+                <img src="https://yt3.googleusercontent.com/wW1Hc3u9RvUpTCBkku3JjMQKT0N-Lo6Q2gqGrweqJSuwrChNkvMObUzX734Srvo3RRbl7kTZjxw=s160-c-k-c0x00ffffff-no-rj" alt="Adidas">
+            </div>
+        </div>
+        <div class="col2">
+            <a>FIND A STORE</a>
+            <a>HELP</a>
+            <a>JOIN US</a>
+            <a>SIGN IN</a>
+        </div>
     </div>
 
     <script>
@@ -282,9 +425,10 @@ $username = $_SESSION['username'] ?? 'guest';
         // etalase-slide
         // ================
 
+        // etalase-slide 1
         const slider = document.getElementById("slider");
-        const btnNext = document.querySelector(".btn-next");
         const btnPrev = document.querySelector(".btn-prev");
+        const btnNext = document.querySelector(".btn-next");
         const progress = document.getElementById("progress");
 
         let currentIndex = 0;
@@ -321,9 +465,51 @@ $username = $_SESSION['username'] ?? 'guest';
             }
         });
 
-        // init
         updateButtons();
         updateProgress();
+
+        // etalase-slide 2
+        const slider2 = document.getElementById("slider2");
+        const btnPrev2 = document.querySelector(".btn-prev2");
+        const btnNext2 = document.querySelector(".btn-next2");
+        const progress2 = document.getElementById("progress2");
+
+        let currentIndex2 = 0;
+        const slideWidth2 = 290;
+        const visibleSlides2 = 4;
+        const totalSlides2 = slider2.children.length;
+        const maxIndex2 = totalSlides2 - visibleSlides2;
+
+        function updateButtons2() {
+            btnPrev2.classList.toggle("hidden", currentIndex2 === 0);
+            btnNext2.classList.toggle("hidden", currentIndex2 >= maxIndex2);
+        }
+
+        function updateProgress2() {
+            let percent = (currentIndex2 / maxIndex2) * 100;
+            progress2.style.width = percent + "%";
+        }
+
+        btnNext2.addEventListener("click", () => {
+            if (currentIndex2 < maxIndex2) {
+                currentIndex2++;
+                slider2.style.transform = `translateX(${-slideWidth2 * currentIndex2}px)`;
+                updateButtons2();
+                updateProgress2();
+            }
+        });
+
+        btnPrev2.addEventListener("click", () => {
+            if (currentIndex2 > 0) {
+                currentIndex2--;
+                slider2.style.transform = `translateX(${-slideWidth2 * currentIndex2}px)`;
+                updateButtons2();
+                updateProgress2();
+            }
+        });
+
+        updateButtons2();
+        updateProgress2();
     </script>
 </body>
 
