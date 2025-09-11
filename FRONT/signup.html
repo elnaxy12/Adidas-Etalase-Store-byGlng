@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comic+Relief:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comic+Relief:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="fade-in">
+    <div style="width: 0; height: 100%; overflow: hidden">
+      <div class="main-container-login">
+        <div class="page-welcome">
+          <p class="title-welcome">Welcome To Website</p>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Reprehenderit doloremque, maiores dolores fuga dolore vitae.
+          </p>
+        </div>
+        <div class="page-login">
+          <div class="center">
+            <form
+              class="register-form"
+              id="registerForm"
+              action="register.php"
+              method="POST"
+            >
+              <p class="title-login">Sign up New Cust</p>
+              <div class="input-group">
+                <input
+                  class="input-username"
+                  type="text"
+                  placeholder="Username"
+                  id="username"
+                  name="username"
+                  required
+                />
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="input-group">
+                <input
+                  class="input-email"
+                  type="email"
+                  placeholder="Email"
+                  id="user_email"
+                  name="user_email"
+                  required
+                />
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="input-group">
+                <input
+                  class="input-password"
+                  type="password"
+                  placeholder="Password"
+                  id="user_password"
+                  name="user_password"
+                  required
+                />
+                <i class="fa-solid fa-lock"></i>
+              </div>
+              <div class="input-group">
+                <input
+                  class="input-repeat-password"
+                  type="password"
+                  placeholder="Repeat Password"
+                  id="repeat_password"
+                  name="repeat_password"
+                  required
+                />
+                <i class="fa-solid fa-key"></i>
+              </div>
+              <div class="input-group justify-betwen">
+                <div class="input-group flex-row-login">
+                  <input type="checkbox" id="igree" />
+                  <label for="igree" class="font-igree">
+                    I agree to the Term User
+                  </label>
+                </div>
+              </div>
+              <div class="user-double">
+                <p class="same-password">
+                  Username atau email sudah terdaftar!
+                </p>
+                <p class="password-not-same">
+                  Password dan Repeat Password tidak sama!
+                </p>
+                <p class="term-user-valid">Anda harus menyetujui Term User!</p>
+              </div>
+              <button type="submit" class="btn-signup">Sign Up</button>
+            </form>
+            <p class="font-size-signup">
+              Alredy have an account?
+              <a class="margin-font" href="signup_switch.php">
+                Sign in
+                <i class="fa-solid fa-arrow-right margin-arrow"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        function hideAllErrors() {
+          document.querySelectorAll(".user-double p").forEach((p) => {
+            p.style.display = "none";
+          });
+        }
+
+        hideAllErrors();
+
+        const error = getQueryParam("error");
+        if (error === "userexists") {
+          const errorDiv = document.querySelector("p.same-password");
+          if (errorDiv) errorDiv.style.display = "block";
+        }
+
+        const form = document.getElementById("registerForm");
+        form.addEventListener("submit", function (e) {
+          hideAllErrors();
+
+          const pwd = document.getElementById("user_password").value;
+          const repeatPwd = document.getElementById("repeat_password").value;
+          const agree = document.getElementById("igree").checked;
+
+          if (pwd !== repeatPwd) {
+            e.preventDefault();
+            const errorDiv = document.querySelector("p.password-not-same");
+            if (errorDiv) errorDiv.style.display = "block";
+            return;
+          }
+
+          if (!agree) {
+            e.preventDefault();
+            const errorDiv = document.querySelector("p.term-user-valid");
+            if (errorDiv) errorDiv.style.display = "block";
+            return;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

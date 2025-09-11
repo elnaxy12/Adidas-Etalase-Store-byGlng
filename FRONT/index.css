@@ -1,0 +1,175 @@
+html,
+body {
+  height: 100%; /* supaya body penuh setinggi layar */
+  margin: 0; /* hilangkan margin bawaan */
+  padding: 0; /* hilangkan padding bawaan */
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("https://www.adidas.co.id/media/wysiwyg/6157447_-_CAM_Onsite_FW25_9.9_Sale_1-9_Sep_ID_HP_Masthead_DT_1920x720.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; /* pastikan gambar menutupi layar */
+  background-attachment: fixed; /* opsional: biar efek parallax (gambar tetap saat scroll) */
+
+  transition: background 0.6s ease; /* animasi halus saat ganti bg */
+}
+
+.btn-start {
+  position: relative;
+}
+
+.btn-start .col {
+  position: absolute;
+  width: 270px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+}
+
+.btn-start .col p {
+  font-size: 19px;
+  font-weight: 400;
+  background-color: rgb(0, 0, 0, 0.2);
+  color: black;
+}
+
+.btn-start .col button {
+  outline: none;
+  border: 1px solid black;
+  color: white;
+  background-color: black;
+  padding: 10px 30px;
+  cursor: pointer;
+  position: relative; /* supaya ::after bisa posisinya relatif ke button */
+}
+
+.btn-start .col button:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+/* Contoh ::after untuk dekorasi atau efek hover */
+.btn-start .col button::after {
+  content: ""; /* wajib ada */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid purple;
+  background-color: white; /* bisa diubah efek overlay */
+  opacity: 0; /* awalnya transparan */
+  transition: 0.3s;
+  pointer-events: none; /* supaya tidak mengganggu klik */
+}
+
+.btn-start .col button:hover::after {
+  opacity: 0.2; /* contoh efek overlay saat hover */
+}
+
+/* animasi fadeout turun */
+.fadeOutDown {
+  opacity: 0;
+  transform: translateY(100px);
+}
+
+/* overlay putih yang akan fade in + naik */
+.overlay {
+  display: none;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 1;
+  transition: top 1s ease;
+}
+
+.overlay.show {
+  top: 0; /* naik ke atas menutupi body */
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 40px;
+  height: 20px;
+  --c: no-repeat radial-gradient(farthest-side, #000 93%, #0000);
+  background: var(--c) 0 0, var(--c) 50% 0, var(--c) 100% 0;
+  background-size: 8px 8px;
+  position: relative;
+  animation: l4-0 1s linear infinite alternate;
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 12px;
+  background: #000;
+  left: 0;
+  top: 0;
+  animation: l4-1 1s linear infinite alternate,
+    l4-2 0.5s cubic-bezier(0, 200, 0.8, 200) infinite;
+}
+
+@keyframes l4-0 {
+  0% {
+    background-position: 0 100%, 50% 0, 100% 0;
+  }
+  8%,
+  42% {
+    background-position: 0 0, 50% 0, 100% 0;
+  }
+  50% {
+    background-position: 0 0, 50% 100%, 100% 0;
+  }
+  58%,
+  92% {
+    background-position: 0 0, 50% 0, 100% 0;
+  }
+  100% {
+    background-position: 0 0, 50% 0, 100% 100%;
+  }
+}
+@keyframes l4-1 {
+  100% {
+    left: calc(100% - 8px);
+  }
+}
+@keyframes l4-2 {
+  100% {
+    top: -0.1px;
+  }
+}
+
+.loader-main {
+  position: fixed; /* supaya menutupi seluruh layar */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* bisa diganti sesuai kebutuhan */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* pastikan di atas semua konten */
+  transition: opacity 0.5s ease;
+}
