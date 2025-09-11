@@ -93,7 +93,22 @@ $username = $_SESSION['username'] ?? 'guest';
             </div>
         </div>
     </div>
+
+    <!--desk1-->
     <div class="main-wrapper">
+        <div class="container-desk1">
+            <h2>MEN'S SNEAKERS AND WORKOUT CLOTHES</h2>
+            <p>
+                Attention, athletes and creators. Stand tall, stand proud and perform your best in men's shoes and apparel that support your passion and define your style. adidas takes fitness and comfort seriously. Workout with cutting-edge cushioning, or set the casual standard off the field with heritage sports style. adidas is here, and has always been, with men's workout clothes and sneakers for dreamers, athletes and everyday wear. Gear up with our best-in-class activewear that fits and feels as great as it looks. Experience the adidas difference.
+            </p>
+        </div>
+    </div>
+
+    <!--slider-etaalse-->
+    <div class="main-wrapper">
+        <div class="title-top-men">
+            <p>TOP MEN FOR YOU</p>
+        </div>
         <div class="container-slide">
             <button class="btn-slider btn-prev">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left">
@@ -103,11 +118,6 @@ $username = $_SESSION['username'] ?? 'guest';
             <div id="slider" class="etalase-slide">
                 <div class="slide">
                     <div class="prototype">
-                        <button class="appreciate">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
-                                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
-                            </svg>
-                        </button>
                         <button class="appreciate">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
                                 <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
@@ -217,6 +227,14 @@ $username = $_SESSION['username'] ?? 'guest';
                 </svg>
             </button>
         </div>
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+    </div>
+
+    <!--gif shoes-->
+    <div class="main-wrapper">
+        <div class="content-gif"></div>
     </div>
 
     <script>
@@ -267,35 +285,45 @@ $username = $_SESSION['username'] ?? 'guest';
         const slider = document.getElementById("slider");
         const btnNext = document.querySelector(".btn-next");
         const btnPrev = document.querySelector(".btn-prev");
+        const progress = document.getElementById("progress");
 
         let currentIndex = 0;
-        const cardWidth = 310; // 200px + margin
-        const visibleCards = 4;
-        const totalCards = slider.children.length;
+        const slideWidth = 290;
+        const visibleSlides = 4;
+        const totalSlides = slider.children.length;
+        const maxIndex = totalSlides - visibleSlides;
 
         function updateButtons() {
             btnPrev.classList.toggle("hidden", currentIndex === 0);
-            btnNext.classList.toggle("hidden", currentIndex >= totalCards - visibleCards);
+            btnNext.classList.toggle("hidden", currentIndex >= maxIndex);
+        }
+
+        function updateProgress() {
+            let percent = (currentIndex / maxIndex) * 100;
+            progress.style.width = percent + "%";
         }
 
         btnNext.addEventListener("click", () => {
-            if (currentIndex < totalCards - visibleCards) {
+            if (currentIndex < maxIndex) {
                 currentIndex++;
-                slider.style.transform = `translateX(${-cardWidth * currentIndex}px)`;
+                slider.style.transform = `translateX(${-slideWidth * currentIndex}px)`;
                 updateButtons();
+                updateProgress();
             }
         });
 
         btnPrev.addEventListener("click", () => {
             if (currentIndex > 0) {
                 currentIndex--;
-                slider.style.transform = `translateX(${-cardWidth * currentIndex}px)`;
+                slider.style.transform = `translateX(${-slideWidth * currentIndex}px)`;
                 updateButtons();
+                updateProgress();
             }
         });
 
-        // set awal
+        // init
         updateButtons();
+        updateProgress();
     </script>
 </body>
 
