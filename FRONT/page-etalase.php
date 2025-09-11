@@ -34,7 +34,7 @@ $username = $_SESSION['username'] ?? 'guest';
             <p>"Style meets savings—shop the latest collection now!"</p>
         </div>
         <div class="col2">
-            <div class="col1">
+            <div class="col1"><a href=""></a>
                 <a href="#">byGlng</a>
             </div>
             <div class="col2">
