@@ -30,6 +30,7 @@ $username = $_SESSION['username'] ?? 'guest';
 <body id="overlay" class="fadeIn">
     <div id="navbar" class="full-navbar">
         <div class="col1">
+            <p class="id">&#127470;&#127465; Indonesia</p>
             <p>"Style meets savings—shop the latest collection now!"</p>
         </div>
         <div class="col2">
