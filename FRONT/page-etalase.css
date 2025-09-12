@@ -262,8 +262,10 @@ body {
   .etalase-slide
   .slide
   .prototype
-  button.appreciate:hover {
-  color: red;
+  button.appreciate:hover
+  svg {
+  stroke: black;
+  fill: black;
 }
 
 .main-wrapper .container-slide .etalase-slide .slide p {
@@ -433,4 +435,55 @@ body {
 
 .adidas-content .col2 a:hover::after {
   width: 100%;
+}
+
+.main-wrapper .container-desk2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 3pc;
+  padding: 3pc 0pc 3pc 0pc;
+}
+
+.main-wrapper .container-desk2 .col {
+  width: 50%;
+}
+
+.main-wrapper .container-desk2 .col p {
+  text-align: justify;
+}
+
+.main-wrapper .container-desk2 .col h2 {
+  text-align: center;
+}
+
+.main-wrapper .container-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(https://media.giphy.com/avatars/adidas/9a5vNF3hPdU8/200h.JPG);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  background-color: black;
+  color: white;
+  padding: 3pc 0pc 3pc 0pc;
+  margin-bottom: 3pc;
+}
+
+footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: black;
+  color: white;
+}
+
+footer .footer-content p {
+  font-size: 12px;
 }

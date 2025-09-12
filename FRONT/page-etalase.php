@@ -129,7 +129,7 @@ $username = $_SESSION['username'] ?? 'guest';
                     </div>
                     <p class="price">$100</p>
                     <p class="title-product">SAMBA OG SHOES</p>
-                    <P class="badge-product">ORIGINALS</P>
+                    <P class="badge-product">MEN'S ORIGINALS</P>
                 </div>
                 <div class="slide">
                     <div class="prototype">
@@ -142,7 +142,7 @@ $username = $_SESSION['username'] ?? 'guest';
                     </div>
                     <p class="price">$60</p>
                     <p class="title-product">SWIFT RUN 1.0 SHOES</p>
-                    <P class="badge-product">SPORTSWEAR</P>
+                    <P class="badge-product">MEN'S SPORTSWEAR</P>
                 </div>
                 <div class="slide">
                     <div class="prototype">
@@ -155,7 +155,7 @@ $username = $_SESSION['username'] ?? 'guest';
                     </div>
                     <p class="price">$135</p>
                     <p class="title-product">ULTRABOOST 1.0 SHOES</p>
-                    <P class="badge-product">SPORTSWEAR</P>
+                    <P class="badge-product">MEN'S SPORTSWEAR</P>
                 </div>
                 <div class="slide">
                     <div class="prototype">
@@ -168,7 +168,7 @@ $username = $_SESSION['username'] ?? 'guest';
                     </div>
                     <p class="price">$120</p>
                     <p class="title-product">GAZELLA INDOOR SHOES</p>
-                    <P class="badge-product">ORIGINALS</P>
+                    <P class="badge-product">MEN'S ORIGINALS</P>
                 </div>
                 <div class="slide">
                     <div class="prototype">
@@ -194,7 +194,7 @@ $username = $_SESSION['username'] ?? 'guest';
                     </div>
                     <p class="price">$100</p>
                     <p class="title-product">SAMBA OG SHOES</p>
-                    <P class="badge-product">ORIGINALS</P>
+                    <P class="badge-product">MEN'S ORIGINALS</P>
                 </div>
                 <div class="slide">
                     <div class="prototype">
@@ -207,7 +207,7 @@ $username = $_SESSION['username'] ?? 'guest';
                     </div>
                     <p class="price">$135</p>
                     <p class="title-product">ULTRABOOST 1.0 SHOES</p>
-                    <P class="badge-product">SPORTSWEAR</P>
+                    <P class="badge-product">MEN'S SPORTSWEAR</P>
                 </div>
                 <div class="slide">
                     <div class="prototype">
@@ -220,7 +220,7 @@ $username = $_SESSION['username'] ?? 'guest';
                     </div>
                     <p class="price">$135</p>
                     <p class="title-product">ULTRABOOST 1.0 SHOES</p>
-                    <P class="badge-product">SPORTSWEAR</P>
+                    <P class="badge-product">MEN'S SPORTSWEAR</P>
                 </div>
             </div>
             <button class="btn-slider btn-next">
@@ -252,11 +252,63 @@ $username = $_SESSION['username'] ?? 'guest';
                                 <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
                             </svg>
                         </button>
-                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/606f418a01a14c419ac35e7c84a5e2d2_9366/Samba_OG_Shoes_Brown_JR0891_00_plp_standard.jpg" alt="">
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/49d73d8eaccb48ee89ee3feb82ce098c_9366/Samba_OG_shoes_Black_JI2734_00_plp_standard.jpg" alt="">
+                    </div>
+                    <p class="price">$110</p>
+                    <p class="title-product">SAMBA OG SHOES</p>
+                    <P class="badge-product">WOMEN'S ORIGINALS</P>
+                </div>
+                <div class="slide">
+                    <div class="prototype">
+                        <button class="appreciate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                            </svg>
+                        </button>
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/6fb12406f5684eeea66762a868b73731_9366/SL_72_OG_Shoes_Brown_JI0189_00_plp_standard.jpg" alt="">
+                    </div>
+                    <p class="price">$110</p>
+                    <p class="title-product">SL 72 OG SHOES</p>
+                    <P class="badge-product">WOMEN'S ORIGINALS</P>
+                </div>
+                <div class="slide">
+                    <div class="prototype">
+                        <button class="appreciate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                            </svg>
+                        </button>
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/24ec18f0e35e491d8be5b38c9f09c11b_9366/SL_72_OG_Shoes_Brown_JS3981_00_plp_standard.jpg" alt="">
+                    </div>
+                    <p class="price">$100</p>
+                    <p class="title-product">SL 72 OG SHOES</p>
+                    <P class="badge-product">WOMEN'S ORIGINALS</P>
+                </div>
+                <div class="slide">
+                    <div class="prototype">
+                        <button class="appreciate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                            </svg>
+                        </button>
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ad3d6d029e414c1ba24603629de60f5e_9366/Cow_Print_Samba_Long_Tongue_Shoes_White_JS3931_00_plp_standard.jpg" alt="">
+                    </div>
+                    <p class="price">$130</p>
+                    <p class="title-product">COW PRINT SAMBA LONG TONGUE SHOES</p>
+                    <P class="badge-product">WOMEN'S ORIGINALS</P>
+                </div>
+                <div class="slide">
+                    <div class="prototype">
+                        <button class="appreciate">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
+                                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
+                            </svg>
+                        </button>
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/3f97a71da3ae4cb98250122966491184_9366/Samba_OG_Shoes_White_IG9030_00_plp_standard.jpg" alt="">
                     </div>
                     <p class="price">$100</p>
                     <p class="title-product">SAMBA OG SHOES</p>
-                    <P class="badge-product">ORIGINALS</P>
+                    <P class="badge-product">WOMEN'S ORIGINALS</P>
                 </div>
                 <div class="slide">
                     <div class="prototype">
@@ -265,37 +317,11 @@ $username = $_SESSION['username'] ?? 'guest';
                                 <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
                             </svg>
                         </button>
-                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/9da93feaffd84fa5baf15e0b9727687a_9366/Swift_Run_1.0_Shoes_Grey_JR6898_00_plp_standard.jpg" alt="">
-                    </div>
-                    <p class="price">$60</p>
-                    <p class="title-product">SWIFT RUN 1.0 SHOES</p>
-                    <P class="badge-product">SPORTSWEAR</P>
-                </div>
-                <div class="slide">
-                    <div class="prototype">
-                        <button class="appreciate">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
-                                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
-                            </svg>
-                        </button>
-                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/e694f6e9261b48d6b255ca8a1388d3d5_9366/ULTRABOOST_1.0_SHOES_White_JR1987_HM1.jpg" alt="">
-                    </div>
-                    <p class="price">$135</p>
-                    <p class="title-product">ULTRABOOST 1.0 SHOES</p>
-                    <P class="badge-product">SPORTSWEAR</P>
-                </div>
-                <div class="slide">
-                    <div class="prototype">
-                        <button class="appreciate">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
-                                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
-                            </svg>
-                        </button>
-                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/911ec048adc4471f938af50867c2ad85_9366/Gazelle_Indoor_Shoes_Red_JI2063_00_plp_standard.jpg" alt="">
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/1f525b85b19a4eda86742e0f46413bcf_9366/Samba_Long_Tongue_Shoes_White_JR5998_00_plp_standard.jpg" alt="">
                     </div>
                     <p class="price">$120</p>
-                    <p class="title-product">GAZELLA INDOOR SHOES</p>
-                    <P class="badge-product">ORIGINALS</P>
+                    <p class="title-product">SAMBA LONG TONGUE SHOES</p>
+                    <P class="badge-product">WOMEN'S ORIGINALS</P>
                 </div>
                 <div class="slide">
                     <div class="prototype">
@@ -304,24 +330,11 @@ $username = $_SESSION['username'] ?? 'guest';
                                 <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
                             </svg>
                         </button>
-                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ed03f2b031b04884a8481cec1ccca4e2_9366/Adizero_EVO_SL_Shoes_Black_JP7149_00_plp_standard.jpg" alt="">
-                    </div>
-                    <p class="price">$150</p>
-                    <p class="title-product">ADIZERO EVO SL SHOES</p>
-                    <P class="badge-product">PERFORMANCE</P>
-                </div>
-                <div class="slide">
-                    <div class="prototype">
-                        <button class="appreciate">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
-                                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
-                            </svg>
-                        </button>
-                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/ee99b4b9bde74f30a933a8bf011911ae_9366/Samba_OG_Shoes_Black_B75807_00_plp_standard.jpg" alt="">
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/89282cea6ef8495caff848b041a0a3ce_9366/Samba_OG_Shoes_Black_IE5836_00_plp_standard.jpg" alt="">
                     </div>
                     <p class="price">$100</p>
                     <p class="title-product">SAMBA OG SHOES</p>
-                    <P class="badge-product">ORIGINALS</P>
+                    <P class="badge-product">WOMEN'S ORIGINALS</P>
                 </div>
                 <div class="slide">
                     <div class="prototype">
@@ -330,24 +343,11 @@ $username = $_SESSION['username'] ?? 'guest';
                                 <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
                             </svg>
                         </button>
-                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/f0ca2dd8bdb84a2ab11faacb8802c4dc_9366/Ultraboost_1.0_Shoes_White_HQ4202_HM1.jpg" alt="">
+                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/b668a22ed8ee475e87beafeeedb96657_9366/Samba_OG_Shoes_Silver_JR0035_00_plp_standard.jpg" alt="">
                     </div>
-                    <p class="price">$135</p>
-                    <p class="title-product">ULTRABOOST 1.0 SHOES</p>
-                    <P class="badge-product">SPORTSWEAR</P>
-                </div>
-                <div class="slide">
-                    <div class="prototype">
-                        <button class="appreciate">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
-                                <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
-                            </svg>
-                        </button>
-                        <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/507b9464089e4c818536b4613435aebf_9366/Samba_OG_Shoes_Blue_ID2056_00_plp_standard.jpg" alt="">
-                    </div>
-                    <p class="price">$135</p>
-                    <p class="title-product">ULTRABOOST 1.0 SHOES</p>
-                    <P class="badge-product">SPORTSWEAR</P>
+                    <p class="price">$100</p>
+                    <p class="title-product">SAMBA OG SHOES</p>
+                    <P class="badge-product">WOMEN'S ORIGINALS</P>
                 </div>
             </div>
             <button class="btn-slider btn-next2">
@@ -379,6 +379,35 @@ $username = $_SESSION['username'] ?? 'guest';
             <a>SIGN IN</a>
         </div>
     </div>
+
+    <!--desk2-->
+    <div class="main-wrapper">
+        <div class="container-desk2">
+            <div class="col">
+                <h2>SNEAKERS, ACTIVEWEAR AND SPORTING GOODS</h2>
+                <p>Calling all athletes. Gear up for your favorite sport with adidas sneakers and activewear for men and women. From running to soccer and the gym to the trail, performance workout clothes and shoes keep you feeling your best. Find sport-specific sneakers to support your passion, and shop versatile activewear and accessories that support everyday comfort. adidas has you covered with world-class performance, quality and unmatched comfort to fit your style. Explore the full range of adidas gear today.
+                    <br>
+                    <br>
+                    Founded on performance, adidas sporting goods equipment supports athletes at all levels. Men, women and kids will find their best form in sneakers and activewear made to perform under pressure. adidas sportswear breathes, manages sweat and helps support working muscles. Explore sport-specific clothes and gear for basketball, soccer, or the yoga studio. Runners will find a range of sneakers for training, racing and trail runs. Gym users will find tops, tees and tanks that support focused efforts with adidas CLIMACOOL to feel cool and dry. Explore warm-ups featuring four-way stretch to support mobility. Find a new outdoor jacket that helps protect against wind and rain. Lace up new athletic shoes that energize every step with adidas Boost cushioning. With sizes and styles for all ages, we have sporting goods for the whole family. Dedicated training demands dedicated workout clothes. Experience the latest performance fabrics and sneaker technologies to get the most out of your next training session
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--banner-promo-->
+    <div class="main-wrapper">
+        <div class="container-banner">
+            <h1>JOIN OUR ADICLUB & GET 15% OFF</h2>
+        </div>
+    </div>
+
+    <!--footer-allContent-->
+    <footer>
+        <div class="footer-content">
+            <p>byGlng &copy; 2025 Gilang Arya | adidas America, Inc.</p>
+        </div>
+    </footer>
 
     <script>
         // =======================
