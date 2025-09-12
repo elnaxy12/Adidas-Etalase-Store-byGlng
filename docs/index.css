@@ -12,7 +12,7 @@ body {
   align-items: center;
 
   background-image: url("https://www.adidas.co.id/media/wysiwyg/6157447_-_CAM_Onsite_FW25_9.9_Sale_1-9_Sep_ID_HP_Masthead_DT_1920x720.jpg");
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover; /* pastikan gambar menutupi layar */
   background-attachment: fixed; /* opsional: biar efek parallax (gambar tetap saat scroll) */
@@ -173,4 +173,10 @@ body {
   align-items: center;
   z-index: 9999; /* pastikan di atas semua konten */
   transition: opacity 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-position: right;
+  }
 }
