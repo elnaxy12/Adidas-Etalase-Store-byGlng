@@ -15,7 +15,6 @@ body {
   align-items: center;
   transition: transform 0.3s ease, opacity 0.3s ease;
   z-index: 100;
-  height: 75px;
 }
 
 .full-navbar.hide {
@@ -61,6 +60,7 @@ body {
   background-color: white;
   font-weight: 100;
   width: 50%;
+  height: auto;
 }
 
 .full-navbar .col2 .col1 {
@@ -492,4 +492,72 @@ footer .footer-content {
 
 footer .footer-content p {
   font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .main-wrapper {
+    padding: 0 10px;
+  }
+
+  .full-navbar.hide {
+    transform: translateY(-100px);
+  }
+
+  .full-navbar .col1 {
+    height: 98px;
+  }
+
+  .full-navbar .col1 p.ads {
+    font-family: "Bebas Neue";
+    width: 80%;
+    text-align: center;
+  }
+
+  .full-banner .banner {
+    height: 359px;
+    background-size: cover;
+    display: flex;
+    align-items: self-end;
+  }
+
+  .full-banner .banner .main-wrapper {
+    margin-bottom: 1pc;
+  }
+
+  .full-banner .banner .main-wrapper .col1 p {
+    width: auto;
+  }
+
+  .full-navbar .col2 .col2 {
+    display: none;
+  }
+
+  .full-navbar .col2 .col3 label {
+    display: none;
+  }
+
+  .main-wrapper .container-desk1 p {
+    width: auto;
+  }
+
+  .main-wrapper .container-desk2 .col {
+    width: 78%;
+  }
+
+  .main-wrapper .content-gif {
+    top: 27pc;
+  }
+
+  .main-wrapper .container-banner {
+    align-items: end;
+    justify-content: center;
+    background-position: center;
+    background-size: contain;
+    padding: 0px;
+    height: 100px;
+  }
+
+  .main-wrapper .container-banner h1 {
+    font-size: 12px;
+  }
 }

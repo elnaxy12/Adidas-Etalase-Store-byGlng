@@ -1,0 +1,45 @@
+<button class="loader-btn" id="btnToggle"></button>
+
+<style>
+  .loader-btn {
+    width: 45px;
+    aspect-ratio: 1;
+    --c: no-repeat linear-gradient(#000 0 0);
+    border: none;
+    cursor: pointer;
+    background: var(--c) 0 0, var(--c) 50% 50%, var(--c) 100% 100%;
+    background-size: 100% 20%; 
+    transition: background-size 0.5s ease;
+  }
+
+  .loader-btn.active {
+    background-size: 20% 20%;
+  }
+
+  .loader-btn.active2 {
+    background-size: 20% 100%;
+  }
+</style>
+<script>
+  const btn = document.getElementById("btnToggle");
+  let isActive = false;
+
+  btn.addEventListener("click", () => {
+    if (!isActive) {
+      btn.classList.add("active");
+
+      setTimeout(() => {
+        btn.classList.add("active2");
+      }, 500);
+
+      isActive = true;
+    } else {
+      btn.classList.remove("active2");
+
+      setTimeout(() => {
+        btn.classList.remove("active");
+        isActive = false;
+      }, 500); 
+    }
+  });
+</script>
