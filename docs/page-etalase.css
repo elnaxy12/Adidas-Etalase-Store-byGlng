@@ -613,7 +613,7 @@ footer .footer-content p {
   }
 
   .full-navbar .col2 .col4.active {
-    transform: translateX(920%);
+    transform: translateX(330px);
     background-color: transparent;
   }
 }
