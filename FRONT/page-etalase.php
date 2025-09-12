@@ -38,12 +38,12 @@ $username = $_SESSION['username'] ?? 'guest';
                 <a href="#">byGlng</a>
             </div>
             <div class="col2">
-                <a href="#">MEN</a>
-                <a href="#">WOMAN</a>
-                <a href="#">KIDS</a>
-                <a href="#">BACK TO SCHOOL</a>
-                <a href="#">SALE</a>
-                <a href="#">NEW & TRENDING</a>
+                <a href="https://www.adidas.com/us/men">MEN</a>
+                <a href="https://www.adidas.com/us/women">WOMAN</a>
+                <a href="https://www.adidas.com/us/kids">KIDS</a>
+                <a href="https://www.adidas.com/us/back_to_school">BACK TO SCHOOL</a>
+                <a href="https://www.adidas.com/us/sale">SALE</a>
+                <a href="https://www.adidas.com/us/new_arrivals">NEW & TRENDING</a>
             </div>
             <div class="col3">
                 <label for="#">
@@ -55,18 +55,18 @@ $username = $_SESSION['username'] ?? 'guest';
                         </svg>
                     </button>
                 </label>
-                <a href="#">
+                <a href="https://www.adidas.com/us">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user">
                         <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
                         <circle cx="12" cy="7" r="4" />
                     </svg>
                 </a>
-                <a href="#">
+                <a href="https://www.adidas.com/us/wishlists">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart">
                         <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
                     </svg>
                 </a>
-                <a href="#">
+                <a href="https://www.adidas.com/us/cart">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-baggage-claim-icon lucide-baggage-claim">
                         <path d="M22 18H6a2 2 0 0 1-2-2V7a2 2 0 0 0-2-2" />
                         <path d="M17 14V4a2 2 0 0 0-2-2h-1a2 2 0 0 0-2 2v10" />
@@ -86,9 +86,9 @@ $username = $_SESSION['username'] ?? 'guest';
                     <p style="font-weight: 100;">Set the tone this school year with timeless adidas apparel and footwear.</p>
                 </div>
                 <div class="col2">
-                    <button>SHOP MEN</button>
-                    <button>SHOP WOMEN</button>
-                    <button>SHOP KIDS</button>
+                    <button onclick="window.location.href='https://www.adidas.com/us/men-back_to_school'">SHOP MEN</button>
+                    <button onclick="window.location.href+'https://www.adidas.com/us/women-back_to_school'">SHOP WOMEN</button>
+                    <button onclick="window.location.href='https://www.adidas.com/us/women-back_to_school'">SHOP KIDS</button>
                 </div>
             </div>
         </div>
@@ -373,10 +373,10 @@ $username = $_SESSION['username'] ?? 'guest';
             </div>
         </div>
         <div class="col2">
-            <a>FIND A STORE</a>
-            <a>HELP</a>
-            <a>JOIN US</a>
-            <a>SIGN IN</a>
+            <a href="https://www.adidas.com/us/stores">FIND A STORE</a>
+            <a href="https://www.adidas.com/us/help">HELP</a>
+            <a href="https://www.adidas.com/us">JOIN US</a>
+            <a href="https://www.adidas.com/us">SIGN IN</a>
         </div>
     </div>
 
