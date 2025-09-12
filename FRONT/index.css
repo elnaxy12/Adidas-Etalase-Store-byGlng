@@ -173,3 +173,9 @@ body {
   z-index: 9999; /* pastikan di atas semua konten */
   transition: opacity 0.5s ease;
 }
+
+@media (max-width: 768px) {
+  body {
+    background-size: 1200px; 
+  }
+}
