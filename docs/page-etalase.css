@@ -68,7 +68,6 @@ body {
   position: absolute;
   background-color: white;
   padding: 10px;
-  left: 0;
   top: 49px;
   display: none;
 }
@@ -605,15 +604,14 @@ footer .footer-content p {
     font-size: 12px;
   }
 
-  .full-navbar .col2 .col4 {
+  .full-navbar .col2 .col2 .col4 {
     display: block;
-
-    transition: transform 1s ease;
-    transform: translateX(0);
+    right: -37px;
+    transition: right 1s ease;
   }
-
-  .full-navbar .col2 .col4.active {
-    transform: translateX(330px);
+  
+  .full-navbar .col2 .col2 .col4.active {
+    right: 0;
     background-color: transparent;
   }
 }
