@@ -1,6 +1,5 @@
 <?php
 session_start();
-// Contoh username dari session
 $username = $_SESSION['username'] ?? 'guest';
 ?>
 
