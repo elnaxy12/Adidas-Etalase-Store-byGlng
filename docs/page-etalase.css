@@ -186,14 +186,15 @@ body {
   font-weight: 600;
 }
 
-.full-banner .banner .main-wrapper .col2 button {
+.full-banner .banner .main-wrapper .col2 a {
   color: white;
   background-color: black;
   border: 1px solid black;
   padding: 10px 10px;
+  text-decoration: none;
 }
 
-.full-banner .banner .main-wrapper .col2 button:hover {
+.full-banner .banner .main-wrapper .col2 a:hover {
   color: black;
   background-color: white;
   border: 1px solid black;
@@ -556,6 +557,10 @@ footer .footer-content p {
 
   .full-banner .banner .main-wrapper .col1 p {
     width: auto;
+  }
+
+  .full-banner .banner .main-wrapper .col2 a {
+    font-size: 12px;
   }
 
   .full-navbar .col2 .col2 {
