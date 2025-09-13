@@ -44,16 +44,16 @@ body {
 .btn-start .col button {
   outline: none;
   border: 1px solid black;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
   padding: 10px 30px;
   cursor: pointer;
   position: relative; /* supaya ::after bisa posisinya relatif ke button */
 }
 
 .btn-start .col button:hover {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color: black;
   border: 1px solid black;
 }
 
