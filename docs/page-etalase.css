@@ -606,12 +606,12 @@ footer .footer-content p {
 
   .full-navbar .col2 .col2 .col4 {
     display: block;
-    right: -37px;
-    transition: right 1s ease;
+    right: -36px;
+    transition: right 0.5s ease;
+    background-color: white;
   }
   
   .full-navbar .col2 .col2 .col4.active {
     right: 0;
-    background-color: transparent;
   }
 }
