@@ -1,99 +1,107 @@
 <!DOCTYPE html>
 <html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adidas store edit byGlng</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
 
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+      rel="icon"
+      href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.5 18h-5.298a.5.5 0 0 1-.423-.233l-5.535-8.775a.499.499 0 0 1 .175-.701l3.888-2.225a.5.5 0 0 1 .671.167l6.945 11A.5.5 0 0 1 23.5 18zm-5.022-1h4.115l-6.205-9.828-3.02 1.728 5.11 8.1zm-3.463 1H9.721a.502.502 0 0 1-.423-.233L6.23 12.909a.499.499 0 0 1 .175-.701l3.892-2.229a.5.5 0 0 1 .671.167l4.47 7.086a.5.5 0 0 1-.423.768zm-5.019-1h4.112l-3.731-5.915-3.022 1.731L9.996 17zm-3.604 1H1.095a.5.5 0 0 1-.423-.233l-.595-.944a.5.5 0 0 1 .175-.701l3.892-2.224a.5.5 0 0 1 .671.167l2 3.168a.5.5 0 0 1-.423.767zm-5.021-1h4.115l-1.261-1.997-3.023 1.728.169.269z"/></svg>'
+      type="image/svg+xml"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comic+Relief:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comic+Relief:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
     <link
-        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comic+Relief:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comic+Relief:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=TASA+Explorer:wght@400..800&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comic+Relief:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comic+Relief:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=TASA+Explorer:wght@400..800&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="loader-main" id="loaderMain">
-        <div class="loader"></div>
+      <div class="loader"></div>
     </div>
     <div id="startBox" class="btn-start">
-        <div class="col">
-            <p>"Begin Your Journey in Style. Only with Adidas."</p>
-            <button id="startBtn">Start</button>
-        </div>
+      <div class="col">
+        <p>"Begin Your Journey in Style. Only with Adidas."</p>
+        <button id="startBtn">Start</button>
+      </div>
     </div>
     <div class="overlay" id="overlay">
-        <div class="loader"></div>
+      <div class="loader"></div>
     </div>
     <script>
-        // ===============================
-        // animasi loading page index.php
-        // ===============================
-        const overlay = document.getElementById("overlay");
-        const startBox = document.getElementById("startBox");
-        const startBtn = document.getElementById("startBtn");
+      // ===============================
+      // animasi loading page index.php
+      // ===============================
+      const overlay = document.getElementById("overlay");
+      const startBox = document.getElementById("startBox");
+      const startBtn = document.getElementById("startBtn");
 
-        // -------------------------
-        // Loader utama
-        // -------------------------
-        function showLoader(duration = 3000, callback) {
-            const loaderMain = document.getElementById("loaderMain");
-            loaderMain.style.display = "block";
-            loaderMain.style.opacity = "1";
+      // -------------------------
+      // Loader utama
+      // -------------------------
+      function showLoader(duration = 3000, callback) {
+        const loaderMain = document.getElementById("loaderMain");
+        loaderMain.style.display = "block";
+        loaderMain.style.opacity = "1";
 
-            setTimeout(() => {
-                loaderMain.style.opacity = "0";
-                setTimeout(() => {
-                    loaderMain.style.display = "none";
-                    if (callback) callback();
-                }, 500);
-            }, duration);
+        setTimeout(() => {
+          loaderMain.style.opacity = "0";
+          setTimeout(() => {
+            loaderMain.style.display = "none";
+            if (callback) callback();
+          }, 500);
+        }, duration);
+      }
+
+      // -------------------------
+      // Overlay & redirect
+      // -------------------------
+      function showOverlayAndRedirect() {
+        startBox.classList.add("fadeOutDown");
+        setTimeout(() => (startBox.style.display = "none"), 800);
+
+        overlay.style.display = "block";
+        setTimeout(() => overlay.classList.add("show"), 50);
+
+        setTimeout(() => {
+          window.location.href = "page-etalase.html";
+        }, 3000);
+      }
+
+      // -------------------------
+      // Klik tombol start
+      // -------------------------
+      startBtn.addEventListener("click", () => {
+        setTimeout(showOverlayAndRedirect, 500);
+      });
+
+      // -------------------------
+      // Handle back/forward cache
+      // -------------------------
+      window.addEventListener("pageshow", function (event) {
+        // selalu jalankan overlay & redirect saat balik
+        if (
+          event.persisted ||
+          performance.getEntriesByType("navigation")[0].type === "back_forward"
+        ) {
+          showOverlayAndRedirect();
+        } else {
+          showLoader(3000);
         }
-
-        // -------------------------
-        // Overlay & redirect
-        // -------------------------
-        function showOverlayAndRedirect() {
-            startBox.classList.add("fadeOutDown");
-            setTimeout(() => startBox.style.display = "none", 800);
-
-            overlay.style.display = "block";
-            setTimeout(() => overlay.classList.add("show"), 50);
-
-            setTimeout(() => {
-                window.location.href = "page-etalase.html";
-            }, 3000);
-        }
-
-        // -------------------------
-        // Klik tombol start
-        // -------------------------
-        startBtn.addEventListener("click", () => {
-            setTimeout(showOverlayAndRedirect, 500);
-        });
-
-        // -------------------------
-        // Handle back/forward cache
-        // -------------------------
-        window.addEventListener("pageshow", function(event) {
-            // selalu jalankan overlay & redirect saat balik
-            if (event.persisted || performance.getEntriesByType("navigation")[0].type === "back_forward") {
-                showOverlayAndRedirect();
-            } else {
-                showLoader(3000);
-            }
-        });
+      });
     </script>
-</body>
-
+  </body>
 </html>
